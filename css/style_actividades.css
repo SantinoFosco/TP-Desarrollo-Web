@@ -9,7 +9,7 @@
 }
 
 body{
-    background-image: url(/img/FondoMarAzulClaro.jpg);
+    background-image: url(img/FondoMarAzulClaro.jpg);
     position: relative;
     min-height: 100vh;
     font-family: 'Agdasima', sans-serif;
@@ -25,7 +25,7 @@ body{
 }
 
 #vidriera_travesias{
-    background-image: url(/img/kayaks_dobles.jpg);
+    background-image: url(img/kayaks_dobles.jpg);
     height: 25em;
     background-size: cover;
     background-position: center;
@@ -50,7 +50,7 @@ body{
 .hijo_foto_travesias{
     flex: 1;
     margin: 10px 20px;
-    background-image: url(/img/kayaks_bajada.jpg);
+    background-image: url(img/kayaks_bajada.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -59,7 +59,7 @@ body{
 .hijo_foto_aca{
     flex: 1;
     margin: 10px 20px;
-    background-image: url(/img/aca_horizontal.jpg);
+    background-image: url(img/aca_horizontal.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -68,7 +68,7 @@ body{
 .hijo_foto_alquiler{
     flex: 1;
     margin: 10px 20px;
-    background-image: url(/img/alquiler_kayak.jpg);
+    background-image: url(img/alquiler_kayak.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;

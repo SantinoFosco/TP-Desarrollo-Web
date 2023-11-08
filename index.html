@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="/css/style_header.css">
-    <link rel="stylesheet" href="/css/style_index.css">
-    <link rel="stylesheet" href="/css/style_footer.css">
+    <link rel="stylesheet" href="css/style_header.css">
+    <link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/style_footer.css">
     <link rel="shortcut icon" href="img/icons8-kayak-32.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
     <header>
         <div class="contenedor">
             <div id="logo_r2p">
-                <img src="/img/icono r2p.png" alt="Icono de Ready To Play" class="foto_logo">
+                <img src="img/icono r2p.png" alt="Icono de Ready To Play" class="foto_logo">
             </div>
             <nav>
                 <div class="menu_hamburguesa">
@@ -82,10 +82,10 @@
                         <p>Tipografia</p>
                         <h4>Agdasima</h4>
                         <section class="padre_redes">
-                            <a href="https://instagram.com/r2p_kayak_team?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img src="/img/icons8-instagram-50.png" alt="Icono Instagram"></a>
-                            <a href="https://www.facebook.com/readytoplayteam?mibextid=ZbWKwL" target="_blank"><img src="/img/icons8-facebook-50.png" alt="Icono Facebook"></a>
-                            <a href="https://www.linkedin.com/in/santino-fosco/" target="_blank"><img src="/img/icons8-linkedin-50.png" alt="Icono LinkedIn"></a>
-                            <a href="https://web.whatsapp.com" target="_blank"><img src="/img/icons8-whatsapp-50.png" alt="Logo WhatsApp"></a>
+                            <a href="https://instagram.com/r2p_kayak_team?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img src="img/icons8-instagram-50.png" alt="Icono Instagram"></a>
+                            <a href="https://www.facebook.com/readytoplayteam?mibextid=ZbWKwL" target="_blank"><img src="img/icons8-facebook-50.png" alt="Icono Facebook"></a>
+                            <a href="https://www.linkedin.com/in/santino-fosco/" target="_blank"><img src="img/icons8-linkedin-50.png" alt="Icono LinkedIn"></a>
+                            <a href="https://web.whatsapp.com" target="_blank"><img src="img/icons8-whatsapp-50.png" alt="Icono WhatsApp"></a>
                         </section>
                     </div>
                 </div>
@@ -105,7 +105,6 @@
         
         function drawChart() {
         
-        // Set Data
         const data = google.visualization.arrayToDataTable([
         ['Contry', 'Mhl'],
         ['#DA4900',1],
@@ -116,7 +115,6 @@
         ['#000000',1]
         ]);
         
-        // Set Options
         const options = {
         pieSliceText: 'none',
         slices: {
@@ -134,7 +132,6 @@
         }
         };
         
-        // Draw
         const chart = new google.visualization.PieChart(document.getElementById('myChart'));
         chart.draw(data, options);
         

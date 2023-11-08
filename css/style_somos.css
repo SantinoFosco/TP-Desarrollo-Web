@@ -9,7 +9,7 @@
 }
 
 body{
-    background-image: url(/img/FondoMarAzulClaro.jpg);
+    background-image: url(img/FondoMarAzulClaro.jpg);
     position: relative;
     min-height: 100vh;
     font-family: 'Agdasima', sans-serif;
@@ -25,7 +25,7 @@ body{
 }
 
 #vidriera_somos{
-    background-image: url(/img/luis_surf_2.jpg);
+    background-image: url(img/luis_surf_2.jpg);
     height: 25em;
     background-size: cover;
     background-position: center;
