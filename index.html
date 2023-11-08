@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/css/style_header.css">
+    <link rel="stylesheet" href="/css/style_index.css">
+    <link rel="stylesheet" href="/css/style_footer.css">
+    <link rel="shortcut icon" href="img/icons8-kayak-32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <title>Ready To Play</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div id="logo_r2p">
+                <img src="/img/icono r2p.png" alt="Icono de Ready To Play" class="foto_logo">
+            </div>
+            <nav>
+                <div class="menu_hamburguesa">
+                    <div class="barra"></div>
+                    <div class="barra"></div>
+                    <div class="barra"></div>
+                </div>
+                <ul class="menu">
+                    <li><a href="index.html" class="resaltado">Home</a></li>
+                    <li><a href="somos.html">Somos</a></li>
+                    <li><a href="actividades.html">Actividades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="vidriera_index">
+        <div class="contenedor">
+            <h2>Salidas en kayak</h2>
+            <p id="parrafo_vidriera">Veni a disfrutar del <b>agua</b>, la <b>naturaleza</b> y el <b>aire libre</b></p>
+            <p>Aqui encontraras los mejores paquetes para que la pases genial</p>
+        </div>
+    </section>
+    <section id="info">
+        <div class="contenedor">
+            <h3>Las travesias que soñás</h3>
+            <form action="envio.php" method="get">
+                <input type="email" name="correo" placeholder="Tu email">
+                <button type="submit" class="btn">Quiero info</button>
+            </form>
+        </div>
+    </section>
+    <section id="boxes">
+        <div class="contenedor">
+            <div class="box1">
+                <h5 class="titulo_imagen">Travesias</h5>
+            </div>
+            <div class="box2">
+                <h5 class="titulo_imagen">Cursos ACA</h5>
+            </div>
+            <div class="box3">
+                <h5 class="titulo_imagen">Alquiler</h5>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="contenedor">
+            <section class="contenedor_padre">
+                <div class="hijo1">
+                    <h4>TP Diseño y Desarrollo Web</h4>
+                    <p>Alumno: Fosco Santino</p>
+                    <p>Tecnicatura en desarrollo de software</p>
+                </div>
+                <div class="contenedor_padre_2">
+                    <div class="hijo2">
+                        <div id="myChart" style="width:100%; height:200px;"></div>
+                    </div>
+                    <div class="hijo3">
+                        <p>Tipografia</p>
+                        <h4>Agdasima</h4>
+                        <section class="padre_redes">
+                            <a href="https://instagram.com/r2p_kayak_team?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img src="/img/icons8-instagram-50.png" alt="Icono Instagram"></a>
+                            <a href="https://www.facebook.com/readytoplayteam?mibextid=ZbWKwL" target="_blank"><img src="/img/icons8-facebook-50.png" alt="Icono Facebook"></a>
+                            <a href="https://www.linkedin.com/in/santino-fosco/" target="_blank"><img src="/img/icons8-linkedin-50.png" alt="Icono LinkedIn"></a>
+                            <a href="https://web.whatsapp.com" target="_blank"><img src="/img/icons8-whatsapp-50.png" alt="Logo WhatsApp"></a>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector(".menu_hamburguesa");
+        const menu = document.querySelector(".menu");
+
+        menuToggle.addEventListener("click", () => {
+            menu.classList.toggle("open");
+        });
+
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        
+        function drawChart() {
+        
+        // Set Data
+        const data = google.visualization.arrayToDataTable([
+        ['Contry', 'Mhl'],
+        ['#DA4900',1],
+        ['#D4ECFF',1],
+        ['#A1D6FF',1],
+        ['#0085B1',1],
+        ['#044A81',1],
+        ['#000000',1]
+        ]);
+        
+        // Set Options
+        const options = {
+        pieSliceText: 'none',
+        slices: {
+            0: {color:'#DA4900'},
+            1: {color:'#D4ECFF'},
+            2: {color:'#A1D6FF'},
+            3: {color:'#0085B1'},
+            4: {color:'#044A81'},
+            5: {color:'#000000'}
+        },
+        legend: 'none',
+        backgroundColor: 'none',
+        tooltip: {
+            text: 'none',
+        }
+        };
+        
+        // Draw
+        const chart = new google.visualization.PieChart(document.getElementById('myChart'));
+        chart.draw(data, options);
+        
+        };
+    </script>
+</body>
+</html>

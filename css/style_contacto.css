@@ -1,0 +1,110 @@
+:root{
+    --negro: #000;
+    --azul_oscuro_mar: #12354F;
+    --azul_intermedio_mar: #044a81;
+    --celeste_mar: #0085b1;
+    --celeste_claro_mar: #A1D6FF;
+    --blanco_espuma: #D4ECFF;
+    --naranja_kayak: rgb(218, 73, 0);
+}
+
+body{
+    background-image: url(/img/FondoMarAzulClaro.jpg);
+    position: relative;
+    min-height: 100vh;
+    font-family: 'Agdasima', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#titulo{
+    color: var(--blanco_espuma);
+    background-image: url(/img/elementos_curso.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 10em;
+}
+#titulo h2{
+    text-align: center;
+    font-size: 3em;
+    margin-top: 1em;
+}
+
+#contacto{
+    background-color: #044b81a1;
+    color: var(--blanco_espuma);
+}
+
+.texto_contacto{
+    float: left;
+    max-width: 60%;
+}
+
+.texto_contacto h3{
+    margin-top: 30px;
+    font-size: 2em
+}
+
+.texto_contacto p{
+    margin: 1em 0;
+}
+
+aside.cuadrito{
+    float: right;
+    width: 30%;
+    background-color: var(--celeste_mar);
+    padding: 15px;
+    margin: 25px 0;
+    color: aliceblue;
+}
+
+.contacto input, .contacto textarea{
+    width: 97%;
+    padding: 6px;
+    margin-bottom: 5px;
+}
+
+.btn{
+    background-color: var(--naranja_kayak);
+    height: 1.9375em;
+    border: none;
+    padding: 0 1.25em;
+    color: var(--blanco_espuma);
+    border-radius: 0.3125em;
+}
+
+.btn:hover{
+    background-color: var(--blanco_espuma);
+    color: var(--naranja_kayak);
+}
+
+#video{
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        margin: 0;
+    }
+    .contenedor{
+        width: 100%;
+    }
+    .texto_contacto{
+        float: none;
+        max-width: 95%;
+        text-align: center;
+        margin-left: 0.7em;
+    }
+    aside.cuadrito{
+        float: none;
+        width: 80%;
+        margin-left: 1.7em;
+    }
+}

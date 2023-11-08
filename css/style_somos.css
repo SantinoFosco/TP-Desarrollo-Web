@@ -1,0 +1,103 @@
+:root{
+    --negro: #000;
+    --azul_oscuro_mar: #12354F;
+    --azul_intermedio_mar: #044a81;
+    --celeste_mar: #0085b1;
+    --celeste_claro_mar: #A1D6FF;
+    --blanco_espuma: #D4ECFF;
+    --naranja_kayak: rgb(218, 73, 0);
+}
+
+body{
+    background-image: url(/img/FondoMarAzulClaro.jpg);
+    position: relative;
+    min-height: 100vh;
+    font-family: 'Agdasima', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#vidriera_somos{
+    background-image: url(/img/luis_surf_2.jpg);
+    height: 25em;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: var(--blanco_espuma);
+}
+
+#vidriera_somos h2{
+    font-size: 6.25em;
+    margin-top: 0;
+}
+
+#quienes_somos{
+    text-align: center;
+    color: var(--blanco_espuma);
+    font-size: 1.2em;
+    margin-bottom: 0;
+    background-color: var(--azul_intermedio_mar);
+    border-bottom: var(--naranja_kayak) 3px solid;
+}
+
+#instructores{
+    background-color: #044b81a1;
+}
+
+#instructores h3{
+    color: var(--blanco_espuma);
+    font-size: 4em;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#contenedor_instructores{
+    display: flex;
+    flex-direction: row;
+}
+
+.instructor1, .instructor2, .instructor3{
+    color: var(--blanco_espuma);
+    flex: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.instructor1 img, .instructor2 img, .instructor3 img{
+    height: 350px;
+    transition: 0.5s;
+}
+
+.instructor1 img:hover, .instructor2 img:hover, .instructor3 img:hover{
+    transform: scale(1.1);
+}
+
+.instructor1 p, .instructor2 p, .instructor3 p{
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        margin: 0;
+    }
+    .contenedor{
+        width: 100%;
+    }
+    #vidriera_somos{
+        height: 15em;
+    }
+    #vidriera_somos h2{
+        font-size: 2.5em;
+    }
+    #contenedor_instructores{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,145 @@
+:root{
+    --negro: #000;
+    --azul_oscuro_mar: #12354F;
+    --azul_intermedio_mar: #044a81;
+    --celeste_mar: #0085b1;
+    --celeste_claro_mar: #A1D6FF;
+    --blanco_espuma: #D4ECFF;
+    --naranja_kayak: rgb(218, 73, 0);
+}
+
+body{
+    background-image: url(/img/FondoMarAzulClaro.jpg);
+    position: relative;
+    min-height: 100vh;
+    font-family: 'Agdasima', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#vidriera_travesias{
+    background-image: url(/img/kayaks_dobles.jpg);
+    height: 25em;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: var(--blanco_espuma);
+}
+
+#vidriera_travesias h2{
+    font-size: 6.25em;
+    margin-top: 0;
+}
+
+#travesias{
+    background-color: #044b81a1;
+}
+
+.padres{
+    display: flex;
+    flex-direction: row;
+}
+
+.hijo_foto_travesias{
+    flex: 1;
+    margin: 10px 20px;
+    background-image: url(/img/kayaks_bajada.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    height: 260px;
+}
+.hijo_foto_aca{
+    flex: 1;
+    margin: 10px 20px;
+    background-image: url(/img/aca_horizontal.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    height: 260px;
+}
+.hijo_foto_alquiler{
+    flex: 1;
+    margin: 10px 20px;
+    background-image: url(/img/alquiler_kayak.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    height: 260px;
+}
+
+.titulo_actividad_travesia{
+    color: var(--blanco_espuma);
+    text-align: center;
+    font-size: 2em;
+    margin: 210px 0 0;
+}
+.titulo_actividad_aca{
+    color: var(--blanco_espuma);
+    text-align: center;
+    font-size: 2em;
+    margin: 100px 0 0;
+}
+.titulo_actividad_alquiler{
+    color: var(--blanco_espuma);
+    text-align: center;
+    font-size: 2em;
+    margin: 10px 0 0;
+}
+
+.hijo_foto h4{
+    margin-left: 250px;
+    font-size: 1.5em;
+}
+
+.hijo_texto{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 10px 20px;
+    color: var(--blanco_espuma);
+}
+
+.bullet1, .bullet2, .bullet3{
+    display: flex;
+    flex-direction: row;
+}
+
+.bullet1 img, .bullet2 img, .bullet3 img{
+    height: 35px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        margin: 0;
+    }
+    .contenedor{
+        width: 100%;
+    }
+    #vidriera_travesias{
+        height: 15em;
+    }
+    #vidriera_travesias h2{
+        font-size: 2em;
+    }
+    .padres{
+        flex-direction: column;
+    }
+    .titulo_actividad_aca{
+        margin: 95px 0 95px;
+    }
+    .titulo_actividad_alquiler{
+        color: var(--blanco_espuma);
+        text-align: center;
+        font-size: 2em;
+        margin: 0 0 190px;
+    }
+}

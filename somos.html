@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/css/style_header.css">
+    <link rel="stylesheet" href="/css/style_somos.css">
+    <link rel="stylesheet" href="/css/style_footer.css">
+    <link rel="shortcut icon" href="img/icons8-kayak-32" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <title>Ready To Play</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div id="logo_r2p">
+                <img src="/img/icono r2p.png" alt="Icono de Ready To Play" class="foto_logo">
+            </div>
+            <nav>
+                <div class="menu_hamburguesa">
+                    <div class="barra"></div>
+                    <div class="barra"></div>
+                    <div class="barra"></div>
+                </div>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="somos.html" class="resaltado">Somos</a></li>
+                    <li><a href="actividades.html">Actividades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="vidriera_somos">
+        <div class="contenedor">
+            <h2>SOBRE NOSOTROS</h2>
+        </div>
+    </section>
+    <section id="quienes_somos">
+        <div class="contenedor">
+            <p>Hace ya más de seis años, en 2016, tres apasionados por el kayak se unieron para crear un emprendimiento familiar que ha perdurado hasta el día de hoy. Luis Fosco, Gabriela Spatari y su hijo Santino Fosco son los impulsores detrás de esta emocionante aventura en el mundo del kayak. <br> <br>Nuestra historia comienza con una pasión compartida por el agua y el deseo de compartir esta experiencia con otros. A lo largo de los años, hemos trabajado incansablemente para ofrecer a nuestros estudiantes la oportunidad de explorar la belleza de ríos, lagos y mares a través del kayak. La escuela de kayak se ha convertido en un lugar donde la naturaleza se encuentra con la emoción y la aventura. <br> <br>Luis, Gabriela y Santino han dedicado su tiempo y esfuerzo para convertir esta escuela en un lugar donde se fomenta la seguridad, la diversión y la educación en el kayak. Cada uno de ellos aporta sus habilidades únicas y pasión por el deporte para garantizar que cada experiencia sea inolvidable. <br> <br>Hoy en día, la Escuela de Kayak continúa creciendo y brindando a estudiantes de todas las edades la oportunidad de descubrir el emocionante mundo del kayak. Si estás buscando una experiencia en el agua que combina aventura y aprendizaje, ¡te invitamos a unirte a nosotros en esta emocionante travesía!</p>
+        </div>
+    </section>
+    <div id="instructores">
+        <div class="contenedor">
+            <h3>Instructores</h3>
+            <div id="contenedor_instructores">
+                <div class="instructor2">
+                    <img src="/img/gabriela_spatari.jpg" alt="Foto instructora Gabriela Spatari" class="instructor">
+                    <p>Gabriela Spatari</p>
+                </div>
+                <div class="instructor1">
+                    <img src="/img/luis_fosco.jpg" alt="Foto instructor Luis Fosco" class="instructor">
+                    <p>Luis Fosco</p>
+                </div>
+                <div class="instructor3">
+                    <img src="/img/santino_fosco.jpg" alt="Foto instructor Santino Fosco" class="instructor">
+                    <p>Santino Fosco</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="contenedor">
+            <section class="contenedor_padre">
+                <div class="hijo1">
+                    <h4>TP Diseño y Desarrollo Web</h4>
+                    <p>Alumno: Fosco Santino</p>
+                    <p>Tecnicatura en desarrollo de software</p>
+                </div>
+                <div class="contenedor_padre_2">
+                    <div class="hijo2">
+                        <div id="myChart" style="width:100%; height:200px;"></div>
+                    </div>
+                    <div class="hijo3">
+                        <p>Tipografia</p>
+                        <h4>Agdasima</h4>
+                        <section class="padre_redes">
+                            <a href="https://instagram.com/r2p_kayak_team?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img src="/img/icons8-instagram-50.png" alt="Icono Instagram"></a>
+                            <a href="https://www.facebook.com/readytoplayteam?mibextid=ZbWKwL" target="_blank"><img src="/img/icons8-facebook-50.png" alt="Icono Facebook"></a>
+                            <a href="https://www.linkedin.com/in/santino-fosco/" target="_blank"><img src="/img/icons8-linkedin-50.png" alt="Icono LinkedIn"></a>
+                            <a href="https://web.whatsapp.com" target="_blank"><img src="/img/icons8-whatsapp-50.png" alt="Logo WhatsApp"></a>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector(".menu_hamburguesa");
+        const menu = document.querySelector(".menu");
+
+        menuToggle.addEventListener("click", () => {
+            menu.classList.toggle("open");
+        });
+
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        
+        function drawChart() {
+        
+        // Set Data
+        const data = google.visualization.arrayToDataTable([
+        ['Contry', 'Mhl'],
+        ['#DA4900',1],
+        ['#D4ECFF',1],
+        ['#A1D6FF',1],
+        ['#0085B1',1],
+        ['#044A81',1],
+        ['#000000',1]
+        ]);
+        
+        // Set Options
+        const options = {
+        pieSliceText: 'none',
+        slices: {
+            0: {color:'#DA4900'},
+            1: {color:'#D4ECFF'},
+            2: {color:'#A1D6FF'},
+            3: {color:'#0085B1'},
+            4: {color:'#044A81'},
+            5: {color:'#000000'}
+        },
+        legend: 'none',
+        backgroundColor: 'none',
+        tooltip: {
+            text: 'none',
+        }
+        };
+        
+        // Draw
+        const chart = new google.visualization.PieChart(document.getElementById('myChart'));
+        chart.draw(data, options);
+        
+        }
+    </script>
+</body>
+</html>

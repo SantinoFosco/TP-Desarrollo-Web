@@ -1,0 +1,203 @@
+:root{
+    --negro: #000;
+    --azul_oscuro_mar: #12354F;
+    --azul_intermedio_mar: #044a81;
+    --celeste_mar: #0085b1;
+    --celeste_claro_mar: #A1D6FF;
+    --blanco_espuma: #D4ECFF;
+    --naranja_kayak: rgb(218, 73, 0);
+}
+
+body{
+    background-image: url(/img/FondoMarAzulClaro.jpg);
+    position: relative;
+    min-height: 100vh;
+    font-family: 'Agdasima', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#vidriera_index{
+    background-image: url(/img/vidriera_index.jpg);
+    height: 25em;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: var(--blanco_espuma);
+}
+
+#vidriera_index h2{
+    font-size: 6.25em;
+    margin-top:0;
+}
+
+#vidriera_index #parrafo_vidriera{
+    margin-top: 7.2em;
+}
+
+#vidriera_index p{
+    font-size: 1.875em;
+    line-height: 0.2em;
+}
+
+#info{
+    background-color: var(--azul_intermedio_mar);
+    padding: 0.9375em;
+    height: 2.1875em;
+    color: var(--blanco_espuma);
+    border-bottom: var(--naranja_kayak) 0.1875em solid;
+}
+
+#info h3{
+    float: left;
+    font-size: 1.5em;
+    margin-top: 0.25em;
+    color: var(--blanco_espuma);
+}
+
+#info form{
+    float: right;
+    line-height: 2.1875em;
+}
+
+#info input{
+    padding: 0.24em;
+    height: 1.375em;
+    width: 12.5em;
+    border-radius: 0.3125em;
+    border: none;
+}
+
+.btn{
+    background-color: var(--naranja_kayak);
+    height: 1.9375em;
+    border: none;
+    padding: 0 1.25em;
+    color: var(--blanco_espuma);
+    border-radius: 0.3125em;
+}
+
+.btn:hover{
+    background-color: var(--blanco_espuma);
+    color: var(--naranja_kayak);
+}
+
+#boxes{
+    background-color: #044b81a1;
+}
+
+#boxes .box1{
+    float: left;
+    width: 32.7%;
+    height: 300px;
+    margin: 1.25em 0.2em;
+    border-radius: 10px;
+    background-image: url(/img/kayaks_palas_arriba.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#boxes .box2{
+    float: left;
+    width: 33.1%;
+    height: 300px;
+    margin: 1.25em 0.2em;
+    border-radius: 10px;
+    background-image: url(/img/mesa_gente_curso.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#boxes .box3{
+    float: left;
+    width: 32.7%;
+    height: 300px;
+    margin: 1.25em 0.2em;
+    border-radius: 10px;
+    background-image: url(/img/chicas_kayak_bajada.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.box1 .titulo_imagen, .box3 .titulo_imagen{
+    font-size: 1.8em;
+    color: var(--blanco_espuma);
+    text-align: center;
+    margin-top: 260px;
+}
+.box2 .titulo_imagen{
+    font-size: 1.8em;
+    color: var(--blanco_espuma);
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        margin: 0;
+    }
+    .contenedor{
+        width: 100%;
+    }
+
+    #vidriera_index{
+        height: 15em;
+        background-size: cover;
+        background-position: center;
+    }
+    #vidriera_index h2{
+        font-size: 3em;
+        margin-top:0;
+    }
+    #vidriera_index #parrafo_vidriera{
+        margin-top: 10em;
+    }
+    #vidriera_index p{
+        font-size: 0.88em;
+        line-height: 0.2em;
+    }
+
+    #info{
+        height: 4.5em;
+        padding-left: 4em;
+    }
+    #info h3{
+        float: none;
+        font-size: 1.5em;
+        margin: 0.15em;
+    }
+    #info form{
+        float: none;
+    }
+    #boxes{
+        padding-left: 2em;
+    }
+    #boxes .box1{
+        float: none;
+        width: 90%;
+    }
+    #boxes .box2{
+        float: none;
+        width: 90%;
+    }
+    #boxes .box3{
+        float: none;
+        width: 90%;
+    }
+    .box1 .titulo_imagen, .box3 .titulo_imagen{
+        font-size: 1.8em;
+        text-align: center;
+        margin-top: 0;
+    }
+    .box1 .titulo_imagen, .box3 .titulo_imagen{
+        -webkit-text-stroke: 1px var(--azul_intermedio_mar);
+    }
+    .box2 .titulo_imagen{
+        -webkit-text-stroke: 1px var(--azul_intermedio_mar);
+    }
+}

@@ -1,0 +1,105 @@
+:root{
+    --negro: #000;
+    --azul_oscuro_mar: #12354F;
+    --azul_intermedio_mar: #044a81;
+    --celeste_mar: #0085b1;
+    --celeste_claro_mar: #A1D6FF;
+    --blanco_espuma: #D4ECFF;
+    --naranja_kayak: rgb(218, 73, 0);
+}
+
+header{
+    background-color: var(--azul_intermedio_mar);
+    min-height: 70px;
+    color: var(--blanco_espuma);
+    border-bottom: var(--naranja_kayak) 3px solid;
+}
+
+#logo_r2p{
+    float: left;
+}
+
+.foto_logo{
+    height: 70px;
+    padding: 20px;
+}
+
+.resaltado{
+    color: var(--negro);
+}
+
+nav{
+    float: right;
+}
+
+header li{
+    display: inline;
+    float: left;
+    padding: 30px 20px;
+}
+
+header a{
+    color: var(--blanco_espuma);
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+header a:hover{
+    color: var(--blanco_espuma);
+    background-color: var(--naranja_kayak);
+}
+
+.menu_hamburguesa{
+    display: none;
+    cursor: pointer;
+}
+
+.barra{
+    width: 25px;
+    height: 5px;
+    background-color: var(--naranja_kayak);
+    margin: 3px 0;
+}
+
+@media screen and (max-width: 768px){
+    header{
+        height: 9em;
+    }
+
+    #logo_r2p{
+        margin: 1em 0 1em 1em;
+    }
+    nav{
+        margin: 4em 2em;
+    }
+    header li{
+        float: none;
+        padding: 0 5px;
+        margin-top: 10px;
+    }
+    header a{
+        padding: 0;
+        border-radius: 10px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu_hamburguesa{
+        display: block;
+    }
+    .menu.open {
+        display: grid;
+        position: absolute;
+        width: 35%;
+        margin-right: 2em;
+        top: 90px;
+        right: 0;
+        background-color: var(--celeste_mar);
+        padding: 10px;
+        z-index: 1;
+        transition: all 0.3s ease;
+    }      
+}
