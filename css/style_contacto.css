@@ -26,7 +26,7 @@ body{
 
 #titulo{
     color: var(--blanco_espuma);
-    background-image: url(/img/elementos_curso.jpg);
+    background-image: url(/img/elementos_cursob.jpg);
     background-size: cover;
     background-position: center;
     height: 10em;
@@ -48,12 +48,12 @@ body{
 }
 
 .texto_contacto h3{
-    margin-top: 30px;
+    margin: 0.7em 0;
     font-size: 2em
 }
 
 .texto_contacto p{
-    margin: 1em 0;
+    margin: 0 0 1.6em;
 }
 
 aside.cuadrito{
@@ -104,7 +104,7 @@ aside.cuadrito{
     }
     aside.cuadrito{
         float: none;
-        width: 80%;
-        margin-left: 1.7em;
+        width: 87%;
+        margin-left: 0.7em;
     }
 }

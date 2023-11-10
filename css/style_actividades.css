@@ -25,8 +25,8 @@ body{
 }
 
 #vidriera_travesias{
-    background-image: url(/img/kayaks_dobles.jpg);
-    height: 25em;
+    background-image: url(/img/kayaks_doblesDrk.jpg);
+    height: 28em;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -50,7 +50,7 @@ body{
 .hijo_foto_travesias{
     flex: 1;
     margin: 10px 20px;
-    background-image: url(/img/kayaks_bajada.jpg);
+    background-image: url(/img/kayaks_bajadaDrk.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -59,7 +59,7 @@ body{
 .hijo_foto_aca{
     flex: 1;
     margin: 10px 20px;
-    background-image: url(/img/aca_horizontal.jpg);
+    background-image: url(/img/aca_horizontalDrk.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -68,7 +68,7 @@ body{
 .hijo_foto_alquiler{
     flex: 1;
     margin: 10px 20px;
-    background-image: url(/img/alquiler_kayak.jpg);
+    background-image: url(/img/alquiler_kayakDrk.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -79,19 +79,19 @@ body{
     color: var(--blanco_espuma);
     text-align: center;
     font-size: 2em;
-    margin: 210px 0 0;
+    margin: 0;
 }
 .titulo_actividad_aca{
     color: var(--blanco_espuma);
     text-align: center;
     font-size: 2em;
-    margin: 100px 0 0;
+    margin: 0;
 }
 .titulo_actividad_alquiler{
     color: var(--blanco_espuma);
     text-align: center;
     font-size: 2em;
-    margin: 10px 0 0;
+    margin: 0;
 }
 
 .hijo_foto h4{
@@ -133,13 +133,7 @@ body{
     .padres{
         flex-direction: column;
     }
-    .titulo_actividad_aca{
-        margin: 95px 0 95px;
-    }
-    .titulo_actividad_alquiler{
-        color: var(--blanco_espuma);
-        text-align: center;
-        font-size: 2em;
-        margin: 0 0 190px;
+    .titulo_actividad_aca, .titulo_actividad_alquiler, .titulo_actividad_travesia{
+        height: 260px;
     }
 }
